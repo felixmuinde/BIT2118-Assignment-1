@@ -26,6 +26,7 @@ Partial Class frmCheckBoxes
         Me.ChkItalic = New System.Windows.Forms.CheckBox()
         Me.TxtDisplay = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.ChkUnderline = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'ChkBold
@@ -54,7 +55,7 @@ Partial Class frmCheckBoxes
         '
         Me.TxtDisplay.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtDisplay.Location = New System.Drawing.Point(59, 47)
-        Me.TxtDisplay.MinimumSize = New System.Drawing.Size(0, 36)
+        Me.TxtDisplay.MinimumSize = New System.Drawing.Size(4, 36)
         Me.TxtDisplay.Name = "TxtDisplay"
         Me.TxtDisplay.Size = New System.Drawing.Size(218, 27)
         Me.TxtDisplay.TabIndex = 2
@@ -69,11 +70,23 @@ Partial Class frmCheckBoxes
         Me.Button1.Text = "CLOSE THE FORM"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'ChkUnderline
+        '
+        Me.ChkUnderline.AutoSize = True
+        Me.ChkUnderline.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Underline)
+        Me.ChkUnderline.Location = New System.Drawing.Point(129, 115)
+        Me.ChkUnderline.Name = "ChkUnderline"
+        Me.ChkUnderline.Size = New System.Drawing.Size(96, 24)
+        Me.ChkUnderline.TabIndex = 4
+        Me.ChkUnderline.Text = "Underline"
+        Me.ChkUnderline.UseVisualStyleBackColor = True
+        '
         'frmCheckBoxes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(343, 246)
+        Me.Controls.Add(Me.ChkUnderline)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TxtDisplay)
         Me.Controls.Add(Me.ChkItalic)
@@ -89,4 +102,5 @@ Partial Class frmCheckBoxes
     Friend WithEvents ChkItalic As CheckBox
     Friend WithEvents TxtDisplay As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents ChkUnderline As CheckBox
 End Class
