@@ -92,6 +92,12 @@
     <Compile Include="frmCheckBoxes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmOptionButtons.Designer.vb">
+      <DependentUpon>frmOptionButtons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptionButtons.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCheckBoxes.resx">
       <DependentUpon>frmCheckBoxes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptionButtons.resx">
+      <DependentUpon>frmOptionButtons.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

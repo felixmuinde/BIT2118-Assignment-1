@@ -32,7 +32,7 @@ Partial Class frmOptionButtons
         '
         Me.lblGender.AutoSize = True
         Me.lblGender.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGender.Location = New System.Drawing.Point(126, 124)
+        Me.lblGender.Location = New System.Drawing.Point(57, 84)
         Me.lblGender.Name = "lblGender"
         Me.lblGender.Size = New System.Drawing.Size(387, 22)
         Me.lblGender.TabIndex = 0
@@ -41,8 +41,9 @@ Partial Class frmOptionButtons
         'optMale
         '
         Me.optMale.AutoSize = True
+        Me.optMale.Checked = True
         Me.optMale.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optMale.Location = New System.Drawing.Point(188, 190)
+        Me.optMale.Location = New System.Drawing.Point(119, 150)
         Me.optMale.Name = "optMale"
         Me.optMale.Size = New System.Drawing.Size(61, 24)
         Me.optMale.TabIndex = 1
@@ -54,7 +55,7 @@ Partial Class frmOptionButtons
         '
         Me.optFemale.AutoSize = True
         Me.optFemale.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optFemale.Location = New System.Drawing.Point(188, 245)
+        Me.optFemale.Location = New System.Drawing.Point(119, 205)
         Me.optFemale.Name = "optFemale"
         Me.optFemale.Size = New System.Drawing.Size(80, 24)
         Me.optFemale.TabIndex = 2
@@ -64,9 +65,10 @@ Partial Class frmOptionButtons
         '
         'cmdConfirm
         '
-        Me.cmdConfirm.Location = New System.Drawing.Point(209, 306)
+        Me.cmdConfirm.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdConfirm.Location = New System.Drawing.Point(119, 266)
         Me.cmdConfirm.Name = "cmdConfirm"
-        Me.cmdConfirm.Size = New System.Drawing.Size(177, 39)
+        Me.cmdConfirm.Size = New System.Drawing.Size(255, 39)
         Me.cmdConfirm.TabIndex = 3
         Me.cmdConfirm.Text = "Confirm your selection"
         Me.cmdConfirm.UseVisualStyleBackColor = True
@@ -75,7 +77,7 @@ Partial Class frmOptionButtons
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(476, 388)
         Me.Controls.Add(Me.cmdConfirm)
         Me.Controls.Add(Me.optFemale)
         Me.Controls.Add(Me.optMale)
