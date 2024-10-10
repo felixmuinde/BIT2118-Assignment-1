@@ -22,35 +22,87 @@ Partial Class frmCalculate
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblFirst = New System.Windows.Forms.Label()
+        Me.lblSecond = New System.Windows.Forms.Label()
+        Me.lblResult = New System.Windows.Forms.Label()
+        Me.txtNum1 = New System.Windows.Forms.TextBox()
+        Me.txtNum2 = New System.Windows.Forms.TextBox()
+        Me.txtResult = New System.Windows.Forms.TextBox()
+        Me.btnAddNumbers = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblFirst
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(95, 61)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(66, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "First Number"
+        Me.lblFirst.AutoSize = True
+        Me.lblFirst.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFirst.Location = New System.Drawing.Point(61, 59)
+        Me.lblFirst.Name = "lblFirst"
+        Me.lblFirst.Size = New System.Drawing.Size(100, 20)
+        Me.lblFirst.TabIndex = 0
+        Me.lblFirst.Text = "First Number"
         '
-        'Label2
+        'lblSecond
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(95, 125)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Label2"
+        Me.lblSecond.AutoSize = True
+        Me.lblSecond.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSecond.Location = New System.Drawing.Point(61, 108)
+        Me.lblSecond.Name = "lblSecond"
+        Me.lblSecond.Size = New System.Drawing.Size(124, 20)
+        Me.lblSecond.TabIndex = 1
+        Me.lblSecond.Text = "Second Number"
+        '
+        'lblResult
+        '
+        Me.lblResult.AutoSize = True
+        Me.lblResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblResult.Location = New System.Drawing.Point(61, 159)
+        Me.lblResult.Name = "lblResult"
+        Me.lblResult.Size = New System.Drawing.Size(55, 20)
+        Me.lblResult.TabIndex = 2
+        Me.lblResult.Text = "Result"
+        '
+        'txtNum1
+        '
+        Me.txtNum1.Location = New System.Drawing.Point(236, 59)
+        Me.txtNum1.Name = "txtNum1"
+        Me.txtNum1.Size = New System.Drawing.Size(127, 20)
+        Me.txtNum1.TabIndex = 3
+        '
+        'txtNum2
+        '
+        Me.txtNum2.Location = New System.Drawing.Point(236, 110)
+        Me.txtNum2.Name = "txtNum2"
+        Me.txtNum2.Size = New System.Drawing.Size(127, 20)
+        Me.txtNum2.TabIndex = 4
+        '
+        'txtResult
+        '
+        Me.txtResult.Location = New System.Drawing.Point(236, 161)
+        Me.txtResult.Name = "txtResult"
+        Me.txtResult.Size = New System.Drawing.Size(127, 20)
+        Me.txtResult.TabIndex = 5
+        '
+        'btnAddNumbers
+        '
+        Me.btnAddNumbers.Location = New System.Drawing.Point(236, 244)
+        Me.btnAddNumbers.Name = "btnAddNumbers"
+        Me.btnAddNumbers.Size = New System.Drawing.Size(127, 35)
+        Me.btnAddNumbers.TabIndex = 6
+        Me.btnAddNumbers.Text = "ADD NUMBERS"
+        Me.btnAddNumbers.UseVisualStyleBackColor = True
         '
         'frmCalculate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(434, 391)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnAddNumbers)
+        Me.Controls.Add(Me.txtResult)
+        Me.Controls.Add(Me.txtNum2)
+        Me.Controls.Add(Me.txtNum1)
+        Me.Controls.Add(Me.lblResult)
+        Me.Controls.Add(Me.lblSecond)
+        Me.Controls.Add(Me.lblFirst)
         Me.Name = "frmCalculate"
         Me.Text = "A simple Calculator"
         Me.ResumeLayout(False)
@@ -58,6 +110,11 @@ Partial Class frmCalculate
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lblFirst As Label
+    Friend WithEvents lblSecond As Label
+    Friend WithEvents lblResult As Label
+    Friend WithEvents txtNum1 As TextBox
+    Friend WithEvents txtNum2 As TextBox
+    Friend WithEvents txtResult As TextBox
+    Friend WithEvents btnAddNumbers As Button
 End Class
