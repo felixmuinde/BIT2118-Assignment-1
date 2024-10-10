@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.ASimpleCalculator.frmOptionButtons
+            Me.MainForm = Global.ASimpleCalculator.frmCheckBoxes
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
