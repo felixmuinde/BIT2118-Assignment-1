@@ -29,6 +29,9 @@ Partial Class frmCalculate
         Me.txtNum2 = New System.Windows.Forms.TextBox()
         Me.txtResult = New System.Windows.Forms.TextBox()
         Me.btnAddNumbers = New System.Windows.Forms.Button()
+        Me.btnSubtract = New System.Windows.Forms.Button()
+        Me.btnMultiply = New System.Windows.Forms.Button()
+        Me.btnDivide = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblFirst
@@ -84,18 +87,48 @@ Partial Class frmCalculate
         '
         'btnAddNumbers
         '
-        Me.btnAddNumbers.Location = New System.Drawing.Point(236, 244)
+        Me.btnAddNumbers.Location = New System.Drawing.Point(65, 244)
         Me.btnAddNumbers.Name = "btnAddNumbers"
-        Me.btnAddNumbers.Size = New System.Drawing.Size(127, 35)
+        Me.btnAddNumbers.Size = New System.Drawing.Size(96, 35)
         Me.btnAddNumbers.TabIndex = 6
         Me.btnAddNumbers.Text = "ADD NUMBERS"
         Me.btnAddNumbers.UseVisualStyleBackColor = True
+        '
+        'btnSubtract
+        '
+        Me.btnSubtract.Location = New System.Drawing.Point(167, 244)
+        Me.btnSubtract.Name = "btnSubtract"
+        Me.btnSubtract.Size = New System.Drawing.Size(96, 35)
+        Me.btnSubtract.TabIndex = 7
+        Me.btnSubtract.Text = "SUB NUMBERS"
+        Me.btnSubtract.UseVisualStyleBackColor = True
+        '
+        'btnMultiply
+        '
+        Me.btnMultiply.Location = New System.Drawing.Point(267, 244)
+        Me.btnMultiply.Name = "btnMultiply"
+        Me.btnMultiply.Size = New System.Drawing.Size(96, 35)
+        Me.btnMultiply.TabIndex = 8
+        Me.btnMultiply.Text = "MULTIPLY NUMBERS"
+        Me.btnMultiply.UseVisualStyleBackColor = True
+        '
+        'btnDivide
+        '
+        Me.btnDivide.Location = New System.Drawing.Point(167, 285)
+        Me.btnDivide.Name = "btnDivide"
+        Me.btnDivide.Size = New System.Drawing.Size(96, 35)
+        Me.btnDivide.TabIndex = 9
+        Me.btnDivide.Text = "DIVIDE NUMBERS"
+        Me.btnDivide.UseVisualStyleBackColor = True
         '
         'frmCalculate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(434, 391)
+        Me.Controls.Add(Me.btnDivide)
+        Me.Controls.Add(Me.btnMultiply)
+        Me.Controls.Add(Me.btnSubtract)
         Me.Controls.Add(Me.btnAddNumbers)
         Me.Controls.Add(Me.txtResult)
         Me.Controls.Add(Me.txtNum2)
@@ -117,4 +150,7 @@ Partial Class frmCalculate
     Friend WithEvents txtNum2 As TextBox
     Friend WithEvents txtResult As TextBox
     Friend WithEvents btnAddNumbers As Button
+    Friend WithEvents btnSubtract As Button
+    Friend WithEvents btnMultiply As Button
+    Friend WithEvents btnDivide As Button
 End Class
